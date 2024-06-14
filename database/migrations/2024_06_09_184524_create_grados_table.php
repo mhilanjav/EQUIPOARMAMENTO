@@ -11,17 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('personals', function (Blueprint $table) {
+        Schema::create('grados', function (Blueprint $table) {
             $table->id();
-            $table->string("ecalafon",15);
-            $table->string("nombres",45);
-            $table->string("apellidos",45);
-
-            $table->unsignedBigInteger("grado_id");
-            $table->foreign("grado_id")->references("id")->on("grados");
-
+            $table->string("grado",20);
+            $table->boolean("estado")->default(1);
             $table->timestamps();
-          
         });
     }
 
@@ -30,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('personals');
+        Schema::dropIfExists('grados');
     }
 };
