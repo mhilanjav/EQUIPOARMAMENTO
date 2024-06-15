@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('personals', function (Blueprint $table) {
             $table->id();
-            $table->string("ecalafon",15);
+            $table->string("escalafon",15);
             $table->string("nombres",45);
             $table->string("apellidos",45);
 
@@ -21,7 +21,7 @@ return new class extends Migration
             $table->foreign("grado_id")->references("id")->on("grados");
 
             $table->timestamps();
-          
+
         });
     }
 

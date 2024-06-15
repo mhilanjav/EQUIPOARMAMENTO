@@ -18,11 +18,11 @@ return new class extends Migration
             $table->string("qr",45);
             $table->string("foto",45);
             $table->string("estado",45);
-            $table->date("fechadealta");
+            $table->date("fechaalta");
 
             $table->unsignedBigInteger("personal_id");
             $table->foreign("personal_id")->references("id")->on("personals");
-            
+
             $table->timestamps();
         });
     }
