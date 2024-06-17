@@ -15,43 +15,43 @@ class EquipoSeeder extends Seeder
     public function run(): void
     {
         Equipo::create([
-            "descripcion"=>"carco de piloto",
-            "codigo"=>"EQ0054",
-            "qr"=>"254125588",
-            "estado"=>"regular",
+            "descripcion"=>"CHALECO ANTIBALA",
+            "codigo"=>"SCZ001",
+            "qr"=>"CDS-SAP-031-011",
+            "estado"=>"EN BUEN ESTADO",
+            "foto"=>"foto.jpg",
+            "fechaalta"=> Carbon::now()->format("Y-m-d"),
+            "personal_id" => 1,
+
+        ]);
+        Equipo::create([
+            "descripcion"=>"CASCO ANTI MOTIN",
+            "codigo"=>"SCZ011",
+            "qr"=>"CDS-SAP-031-001",
+            "estado"=>"EN BUEN ESTADO",
             "foto"=>"foto.jpg",
             "fechaalta"=> Carbon::now()->format("Y-m-d"),
             "personal_id" => 5,
 
         ]);
         Equipo::create([
-            "descripcion"=>"carco de piloto",
-            "codigo"=>"EQ0054",
-            "qr"=>"254125588",
-            "estado"=>"regular",
+            "descripcion"=>"CANILLERA(PAR)",
+            "codigo"=>"SCZ021",
+            "qr"=>"CDS-SAP-031-021",
+            "estado"=>"EN BUEN ESTADO",
             "foto"=>"foto.jpg",
             "fechaalta"=> Carbon::now()->format("Y-m-d"),
-            "personal_id" => 5,
+            "personal_id" => 3,
 
         ]);
         Equipo::create([
-            "descripcion"=>"carco de piloto",
-            "codigo"=>"EQ0054",
-            "qr"=>"254125588",
-            "estado"=>"regular",
+            "descripcion"=>"BASTON POL.PR-24",
+            "codigo"=>"SCZ031",
+            "qr"=>"CDS-SAP-031-071",
+            "estado"=>"EN BUEN ESTADO",
             "foto"=>"foto.jpg",
             "fechaalta"=> Carbon::now()->format("Y-m-d"),
-            "personal_id" => 5,
-
-        ]);
-        Equipo::create([
-            "descripcion"=>"carco de piloto",
-            "codigo"=>"EQ0054",
-            "qr"=>"254125588",
-            "estado"=>"regular",
-            "foto"=>"foto.jpg",
-            "fechaalta"=> Carbon::now()->format("Y-m-d"),
-            "personal_id" => 5,
+            "personal_id" => 4,
 
         ]);
     }
