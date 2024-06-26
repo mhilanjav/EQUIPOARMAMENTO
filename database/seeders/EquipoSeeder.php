@@ -20,7 +20,7 @@ class EquipoSeeder extends Seeder
             "qr"=>"CDS-SAP-031-011",
             "estado"=>"EN BUEN ESTADO",
             "foto"=>"foto.jpg",
-            "fechaalta"=> Carbon::now()->format("Y-m-d"),
+            "fechaalta"=>"2021-10-06",
             "personal_id" => 1,
 
         ]);
@@ -30,7 +30,7 @@ class EquipoSeeder extends Seeder
             "qr"=>"CDS-SAP-031-001",
             "estado"=>"EN BUEN ESTADO",
             "foto"=>"foto.jpg",
-            "fechaalta"=> Carbon::now()->format("Y-m-d"),
+            "fechaalta"=>"2021-10-06",
             "personal_id" => 5,
 
         ]);
@@ -40,7 +40,7 @@ class EquipoSeeder extends Seeder
             "qr"=>"CDS-SAP-031-021",
             "estado"=>"EN BUEN ESTADO",
             "foto"=>"foto.jpg",
-            "fechaalta"=> Carbon::now()->format("Y-m-d"),
+            "fechaalta"=>"2021-10-06",
             "personal_id" => 3,
 
         ]);

@@ -13,10 +13,10 @@ class EspecialidadSeeder extends Seeder
      */
     public function run(): void
     {
-        Especialidad::create(["especialidad"=>"DEAP.",=>1,]);
-        Especialidad::create(["especialidad"=>"DESP.",=>1,]);
-        Especialidad::create(["especialidad"=>"DAP.",=>1,]);
-        Especialidad::create(["especialidad"=>"DGP.",=>1,]);
-        Especialidad::create(["especialidad"=>"MUS.",=>1,]);
+        Especialidad::create(["especialidad" => "DEAP.", "estado" => 1]);
+        Especialidad::create(["especialidad" => "DESP.", "estado" => 1]);
+        Especialidad::create(["especialidad" => "DAP.", "estado" => 1]);
+        Especialidad::create(["especialidad" => "DGP.", "estado" => 1]);
+        Especialidad::create(["especialidad" => "MUS.", "estado" => 1]);
     }
 }

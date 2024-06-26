@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('especialidads', function (Blueprint $table) {
             $table->id();
             $table->string("especialidad",20);
+            $table->boolean("estado")->default(1);
             $table->timestamps();
         });
     }

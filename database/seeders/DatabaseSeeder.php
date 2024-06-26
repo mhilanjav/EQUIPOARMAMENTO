@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             GradoSeeder::class,
             PersonalSeeder::class,
             EquipoSeeder::class,
+            EspecialidadSeeder::class,
         ]);
 
 
