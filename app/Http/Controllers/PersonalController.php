@@ -13,7 +13,9 @@ class PersonalController extends Controller
      */
     public function index()
     {
-        //
+        $personals=Personal::all();
+        //dd($personals);
+        return view("personal.index",compact("personals"));
     }
 
     /**
