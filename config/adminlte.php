@@ -316,10 +316,9 @@ return [
             'can' => 'manage-blog',
         ],
         [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
+            'text' => 'Personals',
+            'url' => 'personal/index',
+            'icon' => "fa-solid fa-people-group",
             'label_color' => 'success',
         ],
         ['header' => 'account_settings'],

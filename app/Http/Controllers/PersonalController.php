@@ -13,7 +13,7 @@ class PersonalController extends Controller
      */
     public function index()
     {
-        $personals=Personal::all();
+        $personals=Personal::where("estado",1)->get();
         //dd($personals);
         return view("personal.index",compact("personals"));
     }

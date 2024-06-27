@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string("escalafon",15);
             $table->string("nombres",45);
             $table->string("apellidos",45);
+            $table->boolean("estado")->default(1);
 
             $table->unsignedBigInteger("grado_id");
             $table->foreign("grado_id")->references("id")->on("grados");
