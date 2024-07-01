@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Personal;
+use App\Models\Grado;
 use App\Http\Requests\StorePersonalRequest;
 use App\Http\Requests\UpdatePersonalRequest;
 
@@ -23,7 +24,8 @@ class PersonalController extends Controller
      */
     public function create()
     {
-        //
+        $grados=Grado::all();
+        return view("personal.crear",compact("grados"));
     }
 
     /**

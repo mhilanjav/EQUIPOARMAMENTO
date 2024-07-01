@@ -11,7 +11,7 @@
     {{-- {{ $personals }} --}}
     <div class="container">
         <div class="text-center">
-            <a href="{{ route("personal.crear") }}"> Crear Personal </a>
+            <a href="{{ route("personal.create") }}"> Crear Personal </a>
         </div>
     <table class="table table-bordered table-hover table-striped">
         <thead>
