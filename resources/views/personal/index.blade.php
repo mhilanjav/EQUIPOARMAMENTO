@@ -15,7 +15,7 @@
         </div>
     <table class="table table-bordered table-hover table-striped">
         <thead>
-            <th>#</th>
+            <th>N°</th>
             <th>NOMBRES</th>
             <th>APELLIDOS</th>
             <th>ESCALAFON</th>
