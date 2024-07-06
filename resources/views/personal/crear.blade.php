@@ -19,7 +19,7 @@
 @section('content')
     <div class="card">
         <div class="card-header">
-            CREAR PERSONAL
+            AGREGAR PERSONAL
         </div>
         <div class="card-body">
             <form action="{{ route("personal.store") }}" method="post" enctype="multipart/form-data">

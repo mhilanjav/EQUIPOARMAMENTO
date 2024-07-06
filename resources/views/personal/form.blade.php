@@ -60,25 +60,25 @@
     <div class="col-3">
         <div class="row">
             <div class="col-12">
-                <button type="button" class="col-6 mb-2 btn btn-outline-success"><i class="fa-solid fa-trash-can"></i> &nbsp;BUSCAR</button>
+                <button type="button" class="col-6 mb-2 btn btn-outline-success"><i class="fa-solid fa-camera"></i> &nbsp;FOTO</button>
             </div>
             <div class="col-12">
-                <button type="button" class="col-8 mb-2 btn btn-outline-success"><i class="fa-solid fa-file-import"></i> &nbsp;AGREGAR</button>
+                <button type="button" class="col-6 mb-2 btn btn-outline-success"><i class="fa-solid fa-cash-register"></i> &nbsp;REGISTRAR</button>
             </div>
             <div class="col-12">
-                <button type="button" class="col-8  mb-2 btn btn-outline-success"><i class="fa-solid fa-download"></i>&nbsp;IMPORTAR</button>
+                <button type="button" class="col-6  mb-2 btn btn-outline-success"><i class="fa-solid fa-download"></i> &nbsp;IMPORTAR</button>
             </div>
             <div class="col-12">
-                <button type="button" class="col-8 mb-2 btn btn-outline-success"><i class="fa-solid fa-file-import"></i> &nbsp;EXPORTAR</button>
+                <button type="button" class="col-6 mb-2 btn btn-outline-success"><i class="fa-solid fa-file-export"></i> &nbsp;EXPORTAR</button>
             </div>
             <div class="col-12">
-                <button type="button" class="btn btn-outline-success  mb-2 col-8"><i class="fa-solid fa-trash-arrow-up"></i> &nbsp;ELIMINAR</button>
+                <button type="button" class="btn btn-outline-success  mb-2 col-6"><i class="fa-solid fa-trash-arrow-up"></i> &nbsp;ELIMINAR</button>
             </div>
             <div class="col-12">
-                <button type="button" class="btn btn-outline-success mb-2 col-8"> <i class="fa-solid fa-magnifying-glass"></i>&nbsp;FOTO</button>
+                <button type="button" class="btn btn-outline-success mb-2 col-6"> <i class="fa-solid fa-magnifying-glass"></i> &nbsp;BUSCAR</button>
             </div>
             <div class="col-12">
-                <button type="button" class="btn btn-outline-success  mb-2 col-8">ATRAS</button>
+                <button type="button" class="btn btn-outline-success  mb-2 col-6"><i class="fa-solid fa-arrow-rotate-left"></i> &nbsp;ATRAS</button>
             </div>
     </div>
 
