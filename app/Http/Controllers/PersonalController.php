@@ -33,7 +33,35 @@ class PersonalController extends Controller
      */
     public function store(StorePersonalRequest $request)
     {
-        //
+
+
+
+
+        //dd($request-> all());
+
+        $personal=new Personal();
+        $personal->grado_id= $request->grado;
+        $personal->nombres= $request->nombres;
+        $personal->apellidos= $request->apellidos;
+        $personal->escalafon= $request->escalafon;
+        $personal->estado=1;
+
+        $personal->save();
+
+        if ($request->hasFile("foto")) {
+            $imagen = $request->file("foto");
+            $nombreimagen = $personal->escalafon. "-" . $imagen->getClientOriginalName();
+            $path = $imagen->storeAs("public/imgenes", $nombreimagen);
+        }
+
+        if (isset($data["photo"]) && $data["photo"] instanceof UploadedFile){
+            $photo = $data["photo"];
+            $photoPath = $photo->store("photo", "public");
+        }
+
+        return redirect()->route("personal.index");
+
+        //$personal->nombre= $request->
     }
 
     /**

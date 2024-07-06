@@ -22,11 +22,17 @@
             CREAR PERSONAL
         </div>
         <div class="card-body">
-            <form action="{{ route("personal.store") }}" method="post">
-        @include("personal.form")
+            <form action="{{ route("personal.store") }}" method="post" enctype="multipart/form-data">
+                @csrf
+                @include("personal.form")
             </form>
         </div>
+
+
+
     </div>
+
+
 @stop
 
 @section('css')

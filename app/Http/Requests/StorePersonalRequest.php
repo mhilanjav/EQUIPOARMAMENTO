@@ -11,7 +11,7 @@ class StorePersonalRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,10 @@ class StorePersonalRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            "grado"=>"required|numeric",
+            "nombres"=>"required|max:45|min:3",
+            "apellidos"=>"required|max:45|min:3",
+            "escalafon"=>"required|max:12|min:5",
         ];
     }
 }
