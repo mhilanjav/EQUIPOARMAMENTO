@@ -13,7 +13,8 @@ class GradoController extends Controller
      */
     public function index()
     {
-        //
+        $grados = Grado::all();
+        return view("grado.index", compact("grados"));
     }
 
     /**

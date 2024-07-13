@@ -321,6 +321,16 @@ return [
             'icon' => "fa-solid fa-people-group",
             'label_color' => 'success',
         ],
+
+        [
+            'text' => 'Grados',
+            'url' => 'grado/index',
+            'icon' => "fa-solid fa-people-group",
+            'label_color' => 'success',
+        ],
+
+
+
         ['header' => 'account_settings'],
         [
             'text' => 'profile',

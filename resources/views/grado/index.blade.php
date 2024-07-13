@@ -7,29 +7,23 @@
 @stop
 
 @section('content')
-
-    {{-- {{ $personals }} --}}
-    <div class="container">
+<div class="container">
         <div class="text-center">
-            <a href="{{ route('personal.create') }}"> Crear Personal </a>
+            <a href="{{ route('grado.create') }}"> Crear Grado </a>
         </div>
     <table class="table table-bordered table-hover table-striped">
         <thead>
             <th>N°</th>
-            <th>NOMBRES</th>
-            <th>APELLIDOS</th>
-            <th>ESCALAFON</th>
             <th>GRADO</th>
             <th>OPCIONES</th>
         </thead>
         <tbody>
-            @foreach($personals as $personal)
+            @foreach($grados as $grado)
             <tr>
-                <td>{{  $personal->id }}</td>
-                <td>{{ $personal->nombres }}</td>
-                <td>{{ $personal->apellidos }}</td>
-                <td>{{ $personal->escalafon }}</td>
-                <td>{{ $personal->grado->grado }}</td>
+                <td>{{  $grado->id }}</td>
+                <td>{{ $grado->grado }}</td>
+                <td>{{ $grado->opciones }}</td>
+
 
 
 
