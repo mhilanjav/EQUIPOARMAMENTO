@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonalController;
 use App\Http\Controllers\GradoController;
+use App\Http\Controllers\PrestamoController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,3 +21,5 @@ Route::post("personal/guardar",[PersonalController::class, "store"])->name("pers
 Route::get("grado/index",[GradoController::class, "index"])->name("grado.index");
 Route::get("grado/crear",[GradoController::class, "create"])->name("grado.create");
 Route::post("grado/guardar",[GradoController::class, "store"])->name("grado.store");
+
+Route::get('prestamo/crear',[PrestamoController::class,'create'])->name("prestamo.create");
