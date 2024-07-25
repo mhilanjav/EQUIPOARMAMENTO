@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Prestamo;
 use App\Http\Requests\StorePrestamoRequest;
 use App\Http\Requests\UpdatePrestamoRequest;
+use App\Models\Equipo;
+use App\Models\Personal;
 
 class PrestamoController extends Controller
 {
@@ -21,7 +23,9 @@ class PrestamoController extends Controller
      */
     public function create()
     {
-        return view("prestamo.create");
+        $personals=Personal::all();
+        $equipos=Equipo::all();
+        return view("prestamo.create",compact("personals","equipos"));
     }
 
     /**

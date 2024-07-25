@@ -20,6 +20,15 @@ return new class extends Migration
             $table->string("estado",45);
             $table->date("fechaalta");
 
+
+            $table->unsignedBigInteger("numeroacta");
+
+            $table->unsignedBigInteger("departamento_id");
+            $table->foreign("departamento_id")->references("id")->on("departamentos");
+
+            $table->unsignedBigInteger("provincia_id");
+            $table->foreign("provincia_id")->references("id")->on("provincias");
+
             $table->unsignedBigInteger("personal_id");
             $table->foreign("personal_id")->references("id")->on("personals");
 

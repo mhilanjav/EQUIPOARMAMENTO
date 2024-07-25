@@ -23,13 +23,13 @@
 </div>
 
 <div class="mb-3">
-    <label for="personal" class="form-label">Entregado a:</label>
-    <select class="form-control" name="" id="">
+  <label for="personal" class="form-label">Entregado a:</label>
+  <select class="form-control" name="" id="">
       <option value="">Seleccione un personal</option>
       @foreach($personals as $personal )
            <option value="{{$personal->id }}">{{ $personal->nombre.$personal->apellidos }}</option>
       @endforeach
-    <textarea type="form-control" id="fotoentrega" rows="3"></textarea>
+  </select> 
 </div>
   
 
